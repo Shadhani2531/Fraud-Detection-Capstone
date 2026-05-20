@@ -32,7 +32,7 @@ The system is trained on the **IEEE-CIS Fraud Detection** dataset (590,000 trans
 ```
 FraudDetection_[Shadhani Shambharkar]/
 │
-├── analysis_fixed.ipynb      # Main Jupyter Notebook (Tasks 1–8)
+├── analysis.ipynb      # Main Jupyter Notebook (Tasks 1–8)
 ├── app.py                    # Streamlit multi-page dashboard
 ├── requirements.txt          # Python dependency manifest
 ├── README.md                 # This file
