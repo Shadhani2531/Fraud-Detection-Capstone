@@ -112,7 +112,7 @@ if page == "Overview":
             labels={'HourOfDay': 'Hour (0-23)', 'isFraud': 'Fraud Event Volume'},
             template="plotly_white", color_discrete_sequence=['#e74c3c']
         )
-        fig_hourly.update_traces(mode='lines+markers', linewidth=2.5)
+        fig_hourly.update_traces(mode='lines+markers', line=dict(width=2.5))
         st.plotly_chart(fig_hourly, use_container_width=True)
         
     with chart_col2:
