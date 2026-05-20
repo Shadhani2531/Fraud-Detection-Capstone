@@ -30,29 +30,12 @@ The system is trained on the **IEEE-CIS Fraud Detection** dataset (590,000 trans
 ## Repository Structure
 
 ```
-FraudDetection_[Shadhani Shambharkar]/
+Fraud-Detection-Capstone/
 │
 ├── analysis.ipynb      # Main Jupyter Notebook (Tasks 1–8)
 ├── app.py                    # Streamlit multi-page dashboard
 ├── requirements.txt          # Python dependency manifest
 ├── README.md                 # This file
-│
-├── data/
-│   ├── train_transaction.csv    # IEEE-CIS transaction data
-│   └── train_identity.csv       # IEEE-CIS identity data
-│
-├── charts/                      # Exported visualisation assets
-│   ├── class_imbalance.png
-│   ├── transaction_amt_dist.png
-│   ├── correlation_heatmap.png
-│   ├── roc_curves.png
-│   ├── pr_curves.png
-│   ├── shap_summary.png
-│   ├── shap_waterfall_fraud.png
-│   ├── shap_waterfall_border.png
-│   ├── shap_waterfall_legit.png
-│   └── risk_tier_device_grouped_bar.png
-│
 ├── best_model.pkl               # Serialised best model (LightGBM)
 └── dashboard_data.csv           # Pre-processed test slice for dashboard
 ```
