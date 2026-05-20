@@ -121,7 +121,7 @@ if page == "Overview":
         fig_device = px.bar(
             device_fraud, x='DeviceType', y='isFraud',
             labels={'DeviceType': 'Hardware Signature', 'isFraud': 'Fraud Event Count'},
-            template="plotly_white", color='DeviceType', color_discrete_palette=px.colors.qualitative.Pastel
+            template="plotly_white", color='DeviceType', color_discrete_sequence=px.colors.qualitative.Pastel
         )
         st.plotly_chart(fig_device, use_container_width=True)
 
