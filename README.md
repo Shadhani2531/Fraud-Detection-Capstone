@@ -191,7 +191,7 @@ https://fraud-detection-capstone-dumajgp6t3d5izdv95eeyj.streamlit.app/
 - [x] `charts/` — all visualisation exports
 - [x] `requirements.txt` — full dependency list
 - [x] `README.md` — this document
-- [ ] `summary.pdf` / `summary.docx` — written project summary *(optional)*
+- [x] `summary.pdf` — written project summary 
 - [x] Live Streamlit URL submitted via Google Form
 
 ---
