@@ -1,4 +1,4 @@
-# 🛡️ Real-Time Fraud Detection System with Explainable AI & Live Dashboard
+# Real-Time Fraud Detection System with Explainable AI & Live Dashboard
 
 > **Internship Capstone — Week 4 | Domain: AI & Data Analytics | Level: Advanced**  
 > Submitted by: **Shadhani Shambharkar**  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Project Overview
+## Project Overview
 
 Financial fraud costs the global economy over **$5 trillion annually**. This project builds a production-grade, end-to-end **Fraud Detection System** that combines state-of-the-art machine learning, imbalance handling, and Explainable AI (SHAP) — packaged inside a live interactive Streamlit dashboard.
 
@@ -14,7 +14,7 @@ The system is trained on the **IEEE-CIS Fraud Detection** dataset (590,000 trans
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 | Feature | Details |
 |---|---|
@@ -27,15 +27,15 @@ The system is trained on the **IEEE-CIS Fraud Detection** dataset (590,000 trans
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 FraudDetection_[Shadhani Shambharkar]/
 │
-├── 📓 analysis_fixed.ipynb      # Main Jupyter Notebook (Tasks 1–8)
-├── 📊 app.py                    # Streamlit multi-page dashboard
-├── 📋 requirements.txt          # Python dependency manifest
-├── 📖 README.md                 # This file
+├── analysis_fixed.ipynb      # Main Jupyter Notebook (Tasks 1–8)
+├── app.py                    # Streamlit multi-page dashboard
+├── requirements.txt          # Python dependency manifest
+├── README.md                 # This file
 │
 ├── data/
 │   ├── train_transaction.csv    # IEEE-CIS transaction data
@@ -74,21 +74,21 @@ FraudDetection_[Shadhani Shambharkar]/
 
 ---
 
-## 🔑 Top 3 Fraud Signals (SHAP)
+## Top 3 Fraud Signals (SHAP)
 
-1. 💰 **High Transaction Amount** — Transactions > $200 contribute +0.45 to fraud probability
-2. 🌙 **Off-Hours Activity (1 AM–5 AM)** — Overnight submissions add +0.25 risk multiplier
-3. 📱 **Mobile Device Attack Vector** — Mobile hardware flag adds +0.15 SHAP contribution
+1. **High Transaction Amount** — Transactions > $200 contribute +0.45 to fraud probability
+2. **Off-Hours Activity (1 AM–5 AM)** — Overnight submissions add +0.25 risk multiplier
+3. **Mobile Device Attack Vector** — Mobile hardware flag adds +0.15 SHAP contribution
 
 ---
 
-## 🚀 Running the Project Locally
+## Running the Project Locally
 
 ### Step 1 — Clone / Download the Repository
 
 ```bash
-git clone https://github.com/<your-username>/FraudDetection_Shadhani.git
-cd FraudDetection_Shadhani
+git clone https://github.com/Shadhani2531/Fraud-Detection-Capstone.git
+cd Fraud-Detection-Capstone
 ```
 
 ### Step 2 — Set Up the Environment (Anaconda Recommended)
@@ -120,7 +120,7 @@ python convert_to_parquet.py
 ### Step 5 — Run the Notebook
 
 ```bash
-jupyter lab analysis_fixed.ipynb
+jupyter lab analysis.ipynb
 ```
 
 Run all cells **top to bottom**. This will:
@@ -144,7 +144,7 @@ streamlit run app.py
 git init
 git add app.py requirements.txt best_model.pkl dashboard_data.csv README.md
 git commit -m "Initial fraud detection dashboard deployment"
-git remote add origin https://github.com/<your-username>/FraudDetection_Shadhani.git
+git remote add origin https://github.com/Shadhani2531/Fraud-Detection-Capstone.git
 git push -u origin main
 ```
 
@@ -154,13 +154,13 @@ git push -u origin main
 
 1. Go to **https://share.streamlit.io** and sign in with GitHub
 2. Click **"New app"**
-3. Select your repository: `FraudDetection_Shadhani`
+3. Select your repository: `Fraud-Detection-Capstone`
 4. Set **Main file path**: `app.py`
 5. Click **"Deploy!"**
 
 Streamlit will automatically install packages from `requirements.txt` and launch your app.
 
-### Step 3 — Submit Your Live URL
+### Step 3 — Live URL
 
 Once deployed, your app will be live at:
 
@@ -168,16 +168,11 @@ Once deployed, your app will be live at:
 https://fraud-detection-capstone-dumajgp6t3d5izdv95eeyj.streamlit.app/
 ```
 
-Paste this URL into the submission form:  
-🔗 https://docs.google.com/forms/d/e/1FAIpQLSeQbkVrKn_UM6eZ6JoK9oxa_cXb1DbsDoH87ap_8MRu_RU5Sw/viewform
-
----
-
-## 📊 Model Performance Summary
+## Model Performance Summary
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | PR-AUC |
 |-------|----------|-----------|--------|----------|---------|--------|
-| **LightGBM** ⭐ | ~97.8% | ~89.2% | ~88.1% | ~88.6% | ~0.981 | ~0.872 |
+| **LightGBM**  | ~97.8% | ~89.2% | ~88.1% | ~88.6% | ~0.981 | ~0.872 |
 | XGBoost | ~97.2% | ~86.4% | ~85.3% | ~85.8% | ~0.976 | ~0.851 |
 | Isolation Forest | ~94.1% | ~61.2% | ~78.5% | ~68.8% | ~0.891 | ~0.612 |
 
